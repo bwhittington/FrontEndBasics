@@ -1,0 +1,50 @@
+﻿@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "base/breakpoints";
+@import "theme/colors";
+@import "theme/typography";
+
+body {
+    @include Helvetica-Neue-Light ;
+    font-size: $font-size-regular;
+    color:$blue-gray;
+}
+
+strong{
+    @include Helvetica-Neue-Light-Bold;
+}
+
+em{
+    @include Helvetica-Neue-Light-Italic ;
+}
+
+h1 {
+    font-size:$font-size-xxx-large;
+}
+
+h2{
+    font-size:$font-size-xx-large;
+}
+
+h3 {
+    font-size:$font-size-x-large;
+}
+
+h4 {
+    font-size:$font-size-large;
+}
+
+h5{
+    font-size:$font-size-regular;
+}
+
+h6 {
+    font-size:$font-size-small;
+}
+
+h1, h2 {
+    color:$dark-blue;
+}
+
+p, li {
+    color:$black;
+}

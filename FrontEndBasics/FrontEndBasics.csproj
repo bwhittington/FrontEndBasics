@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29D2A15A-4914-431C-A72A-672245F53B38}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontEndBasics</RootNamespace>
+    <AssemblyName>FrontEndBasics</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\css\css-sass.html" />
+    <Content Include="app\labs\sass-lab.html" />
+    <Content Include="images\logo.png" />
+    <Content Include="solutions\browsers\browser-dom.html" />
+    <Content Include="solutions\browsers\browser-parsing.html" />
+    <Content Include="solutions\browsers\browser-render.html" />
+    <Content Include="solutions\browsers\browser-request.html" />
+    <Content Include="solutions\browsers\browser-response.html" />
+    <Content Include="solutions\browsers\browser-tools.html" />
+    <Content Include="solutions\css\css-basics.html" />
+    <Content Include="solutions\css\css-dry.html" />
+    <Content Include="solutions\css\css-guide.html" />
+    <Content Include="solutions\css\css-positioning.html" />
+    <Content Include="solutions\css\css-properties.html" />
+    <Content Include="solutions\css\css-sass.html" />
+    <Content Include="solutions\css\css-selectors.html" />
+    <Content Include="solutions\css\css-smacss.html" />
+    <Content Include="solutions\End.html" />
+    <Content Include="solutions\Home.html" />
+    <Content Include="solutions\html\html-attributes.html" />
+    <Content Include="solutions\html\html-elements.html" />
+    <Content Include="solutions\html\html-semantics.html" />
+    <Content Include="solutions\html\html-structure.html" />
+    <Content Include="solutions\labs\lab1.html" />
+    <Content Include="solutions\labs\lab2.html" />
+    <Content Include="solutions\labs\lab3.html" />
+    <Content Include="solutions\labs\lab4.html" />
+    <Content Include="solutions\labs\lab5.html" />
+    <Content Include="solutions\labs\lab6.html" />
+    <Content Include="solutions\labs\sass-lab.html" />
+    <Content Include="solutions\responsive\responsive-bootstrap.html" />
+    <Content Include="solutions\responsive\responsive-frameworks.html" />
+    <Content Include="solutions\responsive\responsive-grid.html" />
+    <Content Include="solutions\responsive\responsive-mobile.html" />
+    <Content Include="solutions\responsive\responsive-queries.html" />
+    <Content Include="solutions\responsive\responsive-tips.html" />
+    <Content Include="solutions\responsive\responsive-web.html" />
+    <Content Include="app\browsers\browser-dom.html" />
+    <Content Include="app\browsers\browser-parsing.html" />
+    <Content Include="app\browsers\browser-render.html" />
+    <Content Include="app\browsers\browser-request.html" />
+    <Content Include="app\browsers\browser-response.html" />
+    <Content Include="app\browsers\browser-tools.html" />
+    <Content Include="app\css\css-basics.html" />
+    <Content Include="app\css\css-dry.html" />
+    <Content Include="app\css\css-guide.html" />
+    <Content Include="app\css\css-positioning.html" />
+    <Content Include="app\css\css-properties.html" />
+    <Content Include="app\css\css-selectors.html" />
+    <Content Include="app\css\css-smacss.html" />
+    <Content Include="app\End.html" />
+    <Content Include="app\html\html-attributes.html" />
+    <Content Include="app\html\html-elements.html" />
+    <Content Include="app\html\html-semantics.html" />
+    <Content Include="app\html\html-structure.html" />
+    <Content Include="app\labs\lab1.html" />
+    <Content Include="app\labs\lab2.html" />
+    <Content Include="app\labs\lab3.html" />
+    <Content Include="app\labs\lab4.html" />
+    <Content Include="app\labs\lab5.html" />
+    <Content Include="app\labs\lab6.html" />
+    <Content Include="app\responsive\responsive-bootstrap.html" />
+    <Content Include="app\responsive\responsive-frameworks.html" />
+    <Content Include="app\responsive\responsive-grid.html" />
+    <Content Include="app\responsive\responsive-mobile.html" />
+    <Content Include="app\responsive\responsive-queries.html" />
+    <Content Include="app\responsive\responsive-tips.html" />
+    <Content Include="app\responsive\responsive-web.html" />
+    <Content Include="images\bootstrap-grids.png" />
+    <Content Include="images\boxmodel.png" />
+    <Content Include="images\dom.png" />
+    <Content Include="images\specificity.emf" />
+    <Content Include="images\specificity.png" />
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="bower.json" />
+    <Content Include="scripts\app\browser-scripts.js" />
+    <Content Include="scripts\scripts.js" />
+    <Content Include="scripts\vendor-scripts.js" />
+    <Content Include="solution-styles\style.css" />
+    <Content Include="styles\scss\app.scss" />
+    <Content Include="styles\scss\base\_base.scss" />
+    <Content Include="styles\scss\theme\_colors.scss" />
+    <Content Include="styles\scss\theme\_typography.scss" />
+    <Content Include="styles\scss\module\_rows.scss" />
+    <Content Include="styles\scss\layout\_nav.scss" />
+    <Content Include="styles\scss\base\_breakpoints.scss" />
+    <Content Include="fonts\HelveticaNeue-Light.otf" />
+    <Content Include="solution-styles\scss\app.scss" />
+    <Content Include="solution-styles\scss\base\_base.scss" />
+    <Content Include="solution-styles\scss\base\_breakpoints.scss" />
+    <Content Include="solution-styles\scss\layout\_nav.scss" />
+    <Content Include="solution-styles\scss\module\_rows.scss" />
+    <Content Include="solution-styles\scss\theme\_colors.scss" />
+    <Content Include="solution-styles\scss\theme\_typography.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\Home.html" />
+    <Content Include="gulpfile.js" />
+    <Content Include="styles\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="solution-styles\scss\state\" />
+    <Folder Include="styles\scss\state\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63676</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63676/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

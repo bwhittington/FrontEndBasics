@@ -1,0 +1,14 @@
+﻿$breakpoint-large: 1024px;
+$breakpoint-medium: 768px;
+$breakpoint-small: 320px;
+
+@media screen and (min-width:$breakpoint-large) and (orientation:landscape) {
+}
+@media screen and (max-width:$breakpoint-large) {
+}
+@media screen and (min-width:$breakpoint-medium) and (max-width:$breakpoint-large) and (orientation:landscape) {
+}
+@media screen and (max-width:($breakpoint-medium - 1px)) {
+}
+@media screen and (min-width:$breakpoint-small) and (max-width:($breakpoint-medium -1)) and (orientation:landscape) {
+}

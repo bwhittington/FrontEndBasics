@@ -1,0 +1,21 @@
+﻿@import "theme/colors";
+@import "theme/typography";
+
+.navbar-brand {
+    padding:0;
+}
+.navbar-brand > img {
+    width:90%;
+}
+
+.navbar-default .navbar-nav > li
+{
+    border-bottom: 3px solid transparent;
+    &:hover {
+        border-bottom: 3px solid $blue-gray;
+    }
+}
+
+.navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover {
+    color:$blue-gray;
+}

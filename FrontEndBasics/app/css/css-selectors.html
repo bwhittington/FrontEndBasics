@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/app/Home.html"><img src="/images/logo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="/app/Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browsers <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/browsers/browser-request.html">How Browsers Work - Request</a></li>
+                            <li><a href="/app/browsers/browser-response.html">How Browsers Work - Response</a></li>
+                            <li><a href="/app/browsers/browser-tools.html">Tools to Help - Fiddler/Postman</a></li>
+                            <li><a href="/app/browsers/browser-parsing.html">Parsing the Response</a></li>
+                            <li><a href="/app/browsers/browser-dom.html">Generating the DOM</a></li>
+                            <li><a href="/app/browsers/browser-render.html">Rendering Content</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HTML Basics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/html/html-structure.html">Structure</a></li>
+                            <li><a href="/app/html/html-semantics.html">Semantics</a></li>
+                            <li><a href="/app/html/html-elements.html">Common Elements</a></li>
+                            <li><a href="/app/html/html-attributes.html">Element Attributes</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CSS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/css/css-basics.html">Basics</a></li>
+                            <li><a href="/app/css/css-selectors.html">Selectors</a></li>
+                            
+                            <li><a href="/app/css/css-properties.html">Properties</a></li>
+                            <li><a href="/app/css/css-positioning.html">Positioning</a></li>
+                            <li><a href="/app/css/css-dry.html">DRY</a></li>
+                            <li><a href="/app/css/css-smacss.html">SMACSS</a></li>
+                            <li><a href="/app/css/css-sass.html">SASS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Responsive Web<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/responsive/responsive-web.html">Responsiveness</a></li>
+                            <li><a href="/app/responsive/responsive-mobile.html">Mobile First</a></li>
+                            <li><a href="/app/responsive/responsive-queries.html">Media Queries</a></li>
+                            <li><a href="/app/responsive/responsive-tips.html">Tips &amp; Tricks</a></li>
+                            <li><a href="/app/responsive/responsive-frameworks.html">Mobile Frameworks</a></li>
+                            <li><a href="/app/responsive/responsive-bootstrap.html">Bootstrap</a></li>
+                            <li><a href="/app/responsive/responsive-grid.html">Bootstrap Grid</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Labs<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/labs/lab1.html">Lab 1</a></li>
+                            <li><a href="/app/labs/lab2.html">Lab 2</a></li>
+                            <li><a href="/app/labs/lab3.html">Lab 3</a></li>
+                            <li><a href="/app/labs/lab4.html">Lab 4</a></li>
+                            <li><a href="/app/labs/lab5.html">Lab 5</a></li>
+                            <li><a href="/app/labs/lab6.html">Lab 6</a></li><li><a href="/app/labs/sass-lab.html">SASS LAB</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/app/End.html">End</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>CSS Selectors</h1>
+                <h2>If you learn nothing else today about CSS, try to remember these 3 things</h2>
+                <p>
+                    <ul>
+                        <li>Keep it Separate</li>
+                        <li>Embrace the cascade</li>
+                        <li>Keep it DRY (or Don't Repeat Yourself)</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>CSS Selectors (Basic)</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Element Selectors - Least Specific - <code>&lt;Body&gt;, &lt;p&gt;</code>
+                        </li>
+                        <li>
+                            Class Selectors - In-between - <code>&lt;.header&gt;</code>
+                        </li>
+                        <li>
+                            Attribute Selectors - In-between - <code>&lt;Input[type=text]&gt;</code>
+                        </li>
+                        <li>
+                            Id Selectors - Most Specific - <code>&lt;#header&gt;</code>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>CSS Selectors (Advanced)</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Element, Element div, p - Selects all <code>&lt;div&gt;</code> and <code>&lt;p&gt;</code> elements
+                        </li>
+                        <li>
+                            Element Element div p - Selects all <code>&lt;p&gt;</code> inside <code>&lt;div&gt;</code> elements
+                        </li>
+                        <li>
+                            Element > Element div > p - Selects all <code>&lt;p&gt;</code> that are direct children of a <code>&lt;div&gt;</code>
+                        </li>
+                        <li>
+                            Element + Element div + p - Selects all <code>&lt;p&gt;</code> that are immediately next to a <code>&lt;div&gt;</code>
+                        </li>
+                        <li>
+                            Element ~ Element p ~ ul - Selects all <code>&lt;ul&gt;</code> that are immediately next to a <code>&lt;p&gt;</code>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <h3>CSS Selectors Rules (Specificity)</h3>
+                <p>
+                    <ul>
+                        <li>
+                            The more specific the selector the higher precedence it takes
+                        </li>
+                        <li>
+                            Specificity goes in order in id, class, attribute, element
+                        </li>
+                        <li>
+                            If specificity # is the same, last written style takes precendence
+                        </li>
+                        <li>
+                            !important tag will override specificity UNLESS there is another !important.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <p>
+                    <img src="../../images/specificity.png" class="img-responsive img-thumbnail" />
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/vendor-scripts.js"></script>
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>

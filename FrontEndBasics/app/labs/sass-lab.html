@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/app/Home.html"><img src="/images/logo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/app/Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browsers <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/browsers/browser-request.html">How Browsers Work - Request</a></li>
+                            <li><a href="/app/browsers/browser-response.html">How Browsers Work - Response</a></li>
+                            <li><a href="/app/browsers/browser-tools.html">Tools to Help - Fiddler/Postman</a></li>
+                            <li><a href="/app/browsers/browser-parsing.html">Parsing the Response</a></li>
+                            <li><a href="/app/browsers/browser-dom.html">Generating the DOM</a></li>
+                            <li><a href="/app/browsers/browser-render.html">Rendering Content</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HTML Basics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/html/html-structure.html">Structure</a></li>
+                            <li><a href="/app/html/html-semantics.html">Semantics</a></li>
+                            <li><a href="/app/html/html-elements.html">Common Elements</a></li>
+                            <li><a href="/app/html/html-attributes.html">Element Attributes</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CSS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/css/css-basics.html">Basics</a></li>
+                            <li><a href="/app/css/css-selectors.html">Selectors</a></li>
+
+                            <li><a href="/app/css/css-properties.html">Properties</a></li>
+                            <li><a href="/app/css/css-positioning.html">Positioning</a></li>
+                            <li><a href="/app/css/css-dry.html">DRY</a></li>
+                            <li><a href="/app/css/css-smacss.html">SMACSS</a></li>
+                            <li><a href="/app/css/css-sass.html">SASS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Responsive Web<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/responsive/responsive-web.html">Responsiveness</a></li>
+                            <li><a href="/app/responsive/responsive-mobile.html">Mobile First</a></li>
+                            <li><a href="/app/responsive/responsive-queries.html">Media Queries</a></li>
+                            <li><a href="/app/responsive/responsive-tips.html">Tips &amp; Tricks</a></li>
+                            <li><a href="/app/responsive/responsive-frameworks.html">Mobile Frameworks</a></li>
+                            <li><a href="/app/responsive/responsive-bootstrap.html">Bootstrap</a></li>
+                            <li><a href="/app/responsive/responsive-grid.html">Bootstrap Grid</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Labs<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/app/labs/lab1.html">Lab 1</a></li>
+                            <li><a href="/app/labs/lab2.html">Lab 2</a></li>
+                            <li><a href="/app/labs/lab3.html">Lab 3</a></li>
+                            <li><a href="/app/labs/lab4.html">Lab 4</a></li>
+                            <li><a href="/app/labs/lab5.html">Lab 5</a></li>
+                            <li><a href="/app/labs/lab6.html">Lab 6</a></li><li><a href="/app/labs/sass-lab.html">SASS LAB</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/app/End.html">End</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>SASS LAB</h1>
+                <p>This lab will turn this website into an ABB styled website.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Theme Rules</h2>
+                <h3>Colors</h3>
+                    <ol>
+                        <li>Open _colors.scss</li>
+                        <li>
+                            Add the following colors and give them a name that describes the color.  Copy syntax from previous colors.
+                            <ul>
+                                <li>#004b7a;</li>
+                                <li>#0076b7</li>
+                                <li>#ff000f</li>
+                                <li>#6e6e6e</li>
+                                <li>#ffff00</li>
+                            </ul>
+                        </li>
+                    </ol>
+                <h3>Typography</h3>
+                <ol>
+                    <li>Open _typography.scss</li>
+                    <li>
+                        Add the following @mixin's for italic and bold styles
+                        <ul>
+                            <li>
+                                Helvetica-Neue-Light-Italic
+                                <ul>
+                                    <li>font-family: Helvetica Neue Light, Helvetica Neue eText Pro Light, Arial, sans-serif;</li>
+                                    <li>font-weight:300;</li>
+                                    <li>font-style: italic;</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Helvetica-Neue-Light-Bold
+                                <ul>
+                                    <li>font-family: Helvetica Neue Light, Helvetica Neue eText Pro Light, Arial, sans-serif;</li>
+                                    <li>font-weight:600;</li>
+                                    <li>font-style: normal;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Base</h3>
+                <ol>
+                    <li>Open _base.scss</li>
+                    <li>
+                        Add styles for strong and em styles
+                        <ul>
+                            <li>strong { @include Helvetica-Neue-Light-Bold; }</li>
+                            <li> em { @include Helvetica-Neue-Light-Italic; } </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Starting with h1 styles step down to h6 change font-size from largest to smallest
+                        <ul>
+                            <li>h1 { font-size:$font-size-xxx-large; color:$dark-blue}</li>
+                            <li>h2 { font-size:$font-size-xx-large; color:$dark-blue}</li>
+                            <li>h3 { font-size:$font-size-x-large; }</li>
+                            <li>h4 { font-size:$font-size-large; }</li>
+                            <li>h5 { font-size:$font-size-regular; }</li>
+                            <li>h6 { font-size:$font-size-small; } </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Keep your styles dry by combining like styles.
+                        <ul>
+                            <li>Remove  {color:$dark-blue; } from h1, h2</li>
+                            <li>Create new selector h1, h2 with style {color:$dark-blue; }</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Modules</h3>
+                <ol>
+                    <li>Open _nav.scss</li>
+                    <li>
+                        Add styles to fix the navbar to match ABB's style guide
+                        <ul>
+                            <li>
+                                Add bottom border color
+                                <ul>
+                                    <li>
+                                        .navbar-default .navbar-nav > li { border-bottom: 3px solid transparent; &:hover { border-bottom: 3px solid $blue-gray; } }
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                Change navigation font color on hover
+                                <ul>
+                                    <li>
+                                        .navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover { color:$blue-gray; }
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/vendor-scripts.js"></script>
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>
