@@ -68,7 +68,6 @@
   <ItemGroup>
     <Content Include="app\css\css-sass.html" />
     <Content Include="app\labs\sass-lab.html" />
-    <Content Include="images\logo.png" />
     <Content Include="solutions\browsers\browser-dom.html" />
     <Content Include="solutions\browsers\browser-parsing.html" />
     <Content Include="solutions\browsers\browser-render.html" />
